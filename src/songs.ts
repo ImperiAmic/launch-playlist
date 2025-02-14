@@ -1,5 +1,3 @@
-import { songTitles } from "./songTitles";
-
 export const isTitleEmpty = (songTitle: string): boolean => {
   let isEmpty: boolean;
 

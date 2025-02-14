@@ -1,2 +1,1 @@
-export let songTitles: string[];
-songTitles = [];
+export const songTitles: string[] = [];
