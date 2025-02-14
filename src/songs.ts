@@ -14,13 +14,15 @@ export const doesTitleExist = (
 };
 
 export const isTitleShort = (songTitle: string): boolean => {
-  const isShort = songTitle.length < 3;
+  const minimumSongTitleLength = 3;
+  const isShort = songTitle.length < minimumSongTitleLength;
 
   return isShort;
 };
 
 export const isPlaylistFull = (songTitles: string[]): boolean => {
-  const isFull = songTitles.length >= 5;
+  const maximumSongListLength = 5;
+  const isFull = songTitles.length >= maximumSongListLength;
 
   return isFull;
 };
